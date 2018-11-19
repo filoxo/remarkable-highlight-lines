@@ -1,22 +1,21 @@
 {
-  "name": "markdown-it-highlight-lines",
-  "version": "1.0.2",
-  "description": "Highlight specific lines in code blocks.",
+  "name": "remarkable-highlight-lines",
+  "version": "0.0.1",
+  "description": "Highlight specific lines in code blocks using Remarkable.",
   "repository": {
-    "url": "egoist/markdown-it-highlight-lines",
+    "url": "filoxo/remarkable-highlight-lines",
     "type": "git"
   },
-  "main": "dist/markdown-it-highlight-lines.cjs.js",
+  "main": "dist/remarkable-highlight-lines.cjs.js",
   "files": [
     "dist"
   ],
   "scripts": {
-    "test": "npm run lint && jest",
-    "lint": "xo",
+    "test": "jest",
     "build": "bili src/index.js --js buble",
     "prepublishOnly": "npm run build"
   },
-  "author": "egoist <0x142857@gmail.com>",
+  "author": "filoxo",
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
@@ -25,15 +24,7 @@
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^22.4.3",
     "bili": "^3.0.15",
-    "eslint-config-rem": "^3.0.0",
     "jest": "^22.4.3",
-    "markdown-it": "^8.4.1",
-    "xo": "^0.18.0"
-  },
-  "xo": {
-    "extends": "rem",
-    "envs": [
-      "jest"
-    ]
+    "remarkable": "^1.7.1"
   }
 }
