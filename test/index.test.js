@@ -1,4 +1,4 @@
-import Markdown from 'markdown-it'
+import Markdown from 'remarkable'
 import highlightLines from '../src'
 
 test('main', () => {
