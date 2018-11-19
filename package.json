@@ -12,6 +12,7 @@
   ],
   "scripts": {
     "test": "jest",
+    "format": "prettier src/**/*.js --write --no-semi --single-quote --trailing-comma es5 --tab-width 2",
     "build": "bili src/index.js --js buble",
     "prepublishOnly": "npm run build"
   },
@@ -24,7 +25,18 @@
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^22.4.3",
     "bili": "^3.0.15",
+    "husky": "^1.1.4",
     "jest": "^22.4.3",
+    "lint-staged": "^8.0.5",
+    "prettier": "1.15.2",
     "remarkable": "^1.7.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js}": ["npm run format", "git add"]
   }
 }
