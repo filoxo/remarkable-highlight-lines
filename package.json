@@ -6,6 +6,7 @@
     "url": "filoxo/remarkable-highlight-lines",
     "type": "git"
   },
+  "keywords": ["remarkable", "markdown", "highlight", "code", "plugin"],
   "main": "dist/remarkable-highlight-lines.cjs.js",
   "files": [
     "dist"
